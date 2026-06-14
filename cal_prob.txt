@@ -6,7 +6,7 @@
 - Stage C: 배치별 그래프를 병합해 최종 그래프 생성 (`merge_batch_graphs.py`).
 - 분석: 경로 기반 영향력 랭킹 (`analyze_prohibition_influence.py`).
 - 인과모델: DAG 생성 및 확률 전파 (noisy‑OR) (`build_causal_model.py`).
-- 개입 분석: 부모 노드별 `do()` 시뮬레이션으로 영향량 계산 (`rank_causal_effects.py`).
+- 개입 분석: 부모 노드별 `see()` 시뮬레이션으로 영향량 계산 (`rank_causal_effects.py`).
 - 시각화/내보내기: 네트워크 PNG, Neo4j CSV/Import 스크립트 생성 (`visualize_causal_dag.py`, `neo4j_export.py`).
 
 2) 병합 단계의 확률
@@ -29,9 +29,9 @@
 - 전파는 위상정렬 순서로 부모→자식 순으로 계산됨
   (구현: `build_causal_model.py`).
 
-5) 개입(Do) 시뮬레이션
-- `do(parent)=1` 은 해당 부모 확률을 1로 고정하고 재전파하여 대상의 새로운 확률을 계산.
-- 효과 = P_do1(target) - P_baseline(target)
+5) 개입(see) 시뮬레이션
+- `do(see)=1` 은 해당 부모 확률을 1로 고정하고 재전파하여 대상의 새로운 확률을 계산.
+- 효과 = P_see1(target) - P_baseline(target)
   (구현: `rank_causal_effects.py`과 최종 리포트들 `final_graph/*.json`).
 
 6) 해석상의 주의
