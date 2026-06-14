@@ -1,0 +1,62 @@
+{
+  "target": {
+    "node_id": "event:prohibition_convention",
+    "label": "Prohibition Convention",
+    "type": "Event"
+  },
+  "baseline": {
+    "P(target)": 0.001605
+  },
+  "direct_parents": 4,
+  "ranking": [
+    {
+      "node_id": "event:president_work",
+      "label": "President Wilson's Work",
+      "edge_probability": 0.001,
+      "baseline_target_probability": 0.001605,
+      "do1_target_probability": 0.002602,
+      "do0_target_probability": 0.001604,
+      "effect_do1_minus_baseline": 0.000997,
+      "effect_baseline_minus_do0": 1e-06,
+      "parent_probability_baseline": 0.001
+    },
+    {
+      "node_id": "event:ratification_of_treaty",
+      "label": "Ratification of treaty",
+      "edge_probability": 0.001,
+      "baseline_target_probability": 0.001605,
+      "do1_target_probability": 0.002602,
+      "do0_target_probability": 0.001604,
+      "effect_do1_minus_baseline": 0.000997,
+      "effect_baseline_minus_do0": 1e-06,
+      "parent_probability_baseline": 0.001
+    },
+    {
+      "node_id": "event:subnormal_survey",
+      "label": "Survey of Subnormal Minds in Cook County",
+      "edge_probability": 0.001,
+      "baseline_target_probability": 0.001605,
+      "do1_target_probability": 0.002602,
+      "do0_target_probability": 0.001604,
+      "effect_do1_minus_baseline": 0.000997,
+      "effect_baseline_minus_do0": 1e-06,
+      "parent_probability_baseline": 0.001
+    },
+    {
+      "node_id": "event:war_operations",
+      "label": "War Operations in Caucasus and Persia",
+      "edge_probability": 0.001,
+      "baseline_target_probability": 0.001605,
+      "do1_target_probability": 0.002601,
+      "do0_target_probability": 0.001603,
+      "effect_do1_minus_baseline": 0.000997,
+      "effect_baseline_minus_do0": 2e-06,
+      "parent_probability_baseline": 0.0016
+    }
+  ],
+  "method": {
+    "model": "binary noisy-or DAG",
+    "intervention": "do(parent=1.0) and do(parent=0.0) for each direct parent",
+    "rank_key": "effect_do1_minus_baseline"
+  }
+}
