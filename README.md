@@ -141,11 +141,3 @@
 - 시행 관련 영역은 아직 희소해서 direct parent가 1개인 타깃도 있습니다.
 - 결과는 최종적인 인과 증명이라기보다 구조화된 인과 가설로 해석해야 합니다.
 
-## 재현 방법
-
-```bash
-conda activate RagEnv
-python build_causal_model.py --seed-query prohibition --ancestor-depth 5
-python rank_causal_effects.py
-python visualize_causal_dag.py --all --target prohibition --output final_graph/prohibition_cluster_dag_typed.png
-```
