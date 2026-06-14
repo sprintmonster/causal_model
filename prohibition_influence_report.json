@@ -1,0 +1,41 @@
+{
+  "target": {
+    "node_id": "topic:prohibition",
+    "label": "Prohibition"
+  },
+  "ranking": [
+    {
+      "node_id": "event:prohibition-strategy-chamber",
+      "label": "Prohibition Strategy Chamber",
+      "type": "Event",
+      "max_path_probability": 0.001,
+      "sum_path_probability": 0.001,
+      "path_count": 1,
+      "paths": [
+        {
+          "path": [
+            "event:prohibition-strategy-chamber",
+            "topic:prohibition"
+          ],
+          "rels": [
+            "CAUSES"
+          ],
+          "probability": 0.001
+        }
+      ]
+    }
+  ],
+  "n_paths": 1,
+  "n_sources": 1,
+  "graph_meta": {
+    "source_dir": "/home/jeonboyun/바탕화면/causal inference/batch_graphs",
+    "n_batches": 1905,
+    "n_nodes": 27376,
+    "n_edges": 15193
+  },
+  "probability_model": {
+    "edge_probability": "(support_count + 1) / (n_batches + 2)",
+    "path_probability": "product(edge probabilities)",
+    "rank_metric": "max_path_probability then sum_path_probability"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "target": {
+    "node_id": "event:prohibition-enforcement-act",
+    "label": "Prohibition Enforcement Act",
+    "type": "event"
+  },
+  "baseline": {
+    "P(target)": 0.001002
+  },
+  "direct_parents": 1,
+  "ranking": [
+    {
+      "node_id": "event:supreme-court-decision",
+      "label": "Supreme Court Decision",
+      "edge_probability": 0.001,
+      "baseline_target_probability": 0.001002,
+      "do1_target_probability": 0.001999,
+      "do0_target_probability": 0.001,
+      "effect_do1_minus_baseline": 0.000997,
+      "effect_baseline_minus_do0": 2e-06,
+      "parent_probability_baseline": 0.0016
+    }
+  ],
+  "method": {
+    "model": "binary noisy-or DAG",
+    "intervention": "do(parent=1.0) and do(parent=0.0) for each direct parent",
+    "rank_key": "effect_do1_minus_baseline"
+  }
+}

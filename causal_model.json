@@ -1,0 +1,1002 @@
+{
+  "meta": {
+    "source_graph_meta": {
+      "source_graph_meta": {
+        "source_dir": "/home/jeonboyun/바탕화면/causal inference/batch_graphs",
+        "n_batches": 1905,
+        "n_nodes": 27376,
+        "n_edges": 15193
+      },
+      "seed_query": "prohibition",
+      "seed_count": 71,
+      "seed_sample": [
+        "event:prohibition-bill-amendments",
+        "topic:prohibition_referendum",
+        "event:prohibition_convention",
+        "event:1916-08-16:prohibition-convention",
+        "event:prohibition_of_spirits",
+        "event:prohibition_bill_considered",
+        "topic:prohibition",
+        "claim:prohibition_of_spirits",
+        "claim:prohibition_bill_considered",
+        "event:prohibition-bill-discussion",
+        "topic:prohibition-bill",
+        "claim:prohibition-bill-discussion",
+        "claim:prohibition-success",
+        "claim:prohibition-vote",
+        "event:prohibition_debate",
+        "claim:prohibition_benefits_kansas",
+        "claim:prohibition_not_bankrupting_kansas",
+        "claim:prohibition_effectiveness",
+        "claim:referendum_power",
+        "claim:prohibition_impracticality",
+        "claim:prohibition_nebraska",
+        "claim:prohibition_medicine",
+        "event:passage_of_district_prohibition_bill",
+        "event:senate-passes-prohibition-bill",
+        "topic:district-prohibition-bill"
+      ],
+      "ancestor_depth": 5,
+      "subgraph_nodes": 84,
+      "subgraph_edges": 39
+    },
+    "assumptions": {
+      "node_state": "binary latent activation",
+      "node_base_rate": "node.attributes.support_probability",
+      "edge_effect": "edge.attributes.support_probability",
+      "aggregation": "noisy-or"
+    },
+    "causal_relationships": [
+      "CAUSES",
+      "ENABLES",
+      "MEDIATES"
+    ],
+    "min_edge_probability": 0.001,
+    "dag_stats": {
+      "kept": 22,
+      "dropped_non_causal_rel": 16,
+      "dropped_low_probability": 0,
+      "dropped_missing_nodes": 0,
+      "dropped_cycle_back_edges": 1
+    },
+    "n_model_nodes": 84,
+    "n_model_edges": 22
+  },
+  "topological_order": [
+    "event:prohibition-bill-amendments",
+    "topic:prohibition_referendum",
+    "event:war_operations",
+    "event:president_work",
+    "event:subnormal_survey",
+    "event:1916-08-16:prohibition-convention",
+    "event:prohibition_of_spirits",
+    "event:prohibition_bill_considered",
+    "event:prohibition-bill-discussion",
+    "topic:prohibition-bill",
+    "claim:prohibition-bill-discussion",
+    "claim:prohibition-vote",
+    "event:prohibition_debate",
+    "claim:prohibition_benefits_kansas",
+    "claim:prohibition_not_bankrupting_kansas",
+    "claim:prohibition_effectiveness",
+    "claim:referendum_power",
+    "claim:prohibition_impracticality",
+    "claim:prohibition_nebraska",
+    "claim:prohibition_medicine",
+    "claim:sheppard_opinion",
+    "event:senate-passes-prohibition-bill",
+    "claim:prohibition-measure",
+    "event:conferees_agree_on_draft_bill",
+    "event:british_war_commission_departure",
+    "event:vodka-prohibition",
+    "event:prohibition-victory",
+    "claim:gardiner_enforces_prohibition",
+    "event:prohibition-vote",
+    "event:prohibition-resolution-vote",
+    "claim:prohibition-resolution-not-passed",
+    "event:prohibition-amendment",
+    "claim:ratification-necessary",
+    "claim:ratification-effective-one-year",
+    "event:montana-ratifies-law",
+    "event:prohibition_bill",
+    "event:food-bill-prohibition",
+    "event:nebraska_ratification",
+    "claim:prohibition_effective_july_1",
+    "event:war-time-prohibition-order",
+    "claim:agents_stopped_by_searchlight",
+    "claim:agents_held_up_by_witnesses",
+    "claim:agents_shoot_law_violators",
+    "event:new-zealand-prohibition-vote",
+    "event:paris_conference_resumes",
+    "event:war-time-prohibition-repeal",
+    "event:president-end-war-prohibition",
+    "event:supreme-court-decision",
+    "event:war-time-prohibition-enforcement-act",
+    "event:constitutional-amendment",
+    "event:ratification_of_treaty",
+    "event:prohibition_defense",
+    "topic:prohibition_amendment",
+    "event:iron_county_prohibition_conflict",
+    "topic:prohibition_conflict",
+    "event:prohibition-strategy-chamber",
+    "claim:prohibition-amendment",
+    "claim:meredith-prohibition",
+    "claim:meredith-prohibition-support",
+    "topic:federal-prohibition-enforcement-act",
+    "event:prohibition-discussion",
+    "claim:prohibition-liberalization",
+    "topic:prohibition-enforcement",
+    "claim:prohibition_will_be_enforced",
+    "claim:no_change_in_prohibition_law",
+    "claim:prohibition_weakness",
+    "event:game_result",
+    "claim:prohibition_of_spirits",
+    "claim:prohibition_bill_considered",
+    "claim:prohibition-success",
+    "event:passage_of_district_prohibition_bill",
+    "topic:district-prohibition-bill",
+    "claim:prohibition_amendments_retained",
+    "event:war_prohibition_discussion",
+    "claim:prohibition-resolution-passed",
+    "claim:prohibition_amendment_ratified",
+    "event:prohibition_agents_arrested",
+    "event:prohibition_and_employment",
+    "claim:war-time-prohibition-repeal",
+    "topic:war-prohibition",
+    "event:prohibition-enforcement-act",
+    "event:prohibition_convention",
+    "topic:prohibition",
+    "event:prohibition_order"
+  ],
+  "nodes": [
+    {
+      "id": "claim:agents_held_up_by_witnesses",
+      "label": "Agents Held Up by Witnesses",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:agents_shoot_law_violators",
+      "label": "Agents Shoot Law Violators",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:agents_stopped_by_searchlight",
+      "label": "Agents Stopped by Searchlight",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:gardiner_enforces_prohibition",
+      "label": "Gardiner Enforces Prohibition Law",
+      "type": "claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:meredith-prohibition",
+      "label": "Meredith Supports Prohibition",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:meredith-prohibition-support",
+      "label": "Meredith Supports Prohibition",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:no_change_in_prohibition_law",
+      "label": "Any change in the existing prohibition law will come through Congress",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition-amendment",
+      "label": "Prohibition Amendment",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition-bill-discussion",
+      "label": "Discussion of the District Prohibition Bill",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition-liberalization",
+      "label": "Prohibition Liberalization Plank",
+      "type": "claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition-measure",
+      "label": "Prohibition Measure",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition-resolution-not-passed",
+      "label": "Prohibition Resolution Not Passed",
+      "type": "claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition-resolution-passed",
+      "label": "Prohibition Resolution Passed",
+      "type": "claim",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:prohibition-resolution-vote",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "claim:prohibition-success",
+      "label": "Success of Idaho Prohibition Law",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "claim:prohibition-bill-discussion",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "claim:prohibition-vote",
+      "label": "Vote on the District Prohibition Bill",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition_amendment_ratified",
+      "label": "Prohibition Amendment Ratified",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:nebraska_ratification",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "claim:prohibition_amendments_retained",
+      "label": "Prohibition Amendments Retained",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:conferees_agree_on_draft_bill",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "claim:prohibition_benefits_kansas",
+      "label": "Prohibition Benefits Kansas",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition_bill_considered",
+      "label": "Prohibition Bill Considered",
+      "type": "claim",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:prohibition_bill_considered",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "claim:prohibition_effective_july_1",
+      "label": "Prohibition Becomes Effective July 1",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition_effectiveness",
+      "label": "Prohibition Effectively Enforced in Kansas",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition_impracticality",
+      "label": "Prohibition Unfeasible in Kansas City",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition_medicine",
+      "label": "Prohibition Not Beneficial for Medicine",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition_nebraska",
+      "label": "Nebraska's Experience with Prohibition",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition_not_bankrupting_kansas",
+      "label": "Prohibition Does Not Bankrupt Kansas",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition_of_spirits",
+      "label": "Prohibition of Spirits",
+      "type": "claim",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:prohibition_of_spirits",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "claim:prohibition_weakness",
+      "label": "Weakness in Prohibition Stance",
+      "type": "claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:prohibition_will_be_enforced",
+      "label": "Prohibition will be enforced to the limit if elected",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:ratification-effective-one-year",
+      "label": "Prohibition Effective One Year After Ratification",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:ratification-necessary",
+      "label": "Ratification Necessary for Prohibition",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:referendum_power",
+      "label": "Congress Has Power to Refer Prohibition Bill",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:sheppard_opinion",
+      "label": "Sheppard Opinion",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "claim:war-time-prohibition-repeal",
+      "label": "War-time prohibition should be repealed",
+      "type": "Claim",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:war-time-prohibition-repeal",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "event:1916-08-16:prohibition-convention",
+      "label": "Prohibition convention in Elmira, NY",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:british_war_commission_departure",
+      "label": "Departure of British war commission to Canada",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:conferees_agree_on_draft_bill",
+      "label": "Conferees Agree on Draft Bill",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:constitutional-amendment",
+      "label": "National Prohibition Constitutional Amendment",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:food-bill-prohibition",
+      "label": "Food Bill with Prohibition Plan",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:game_result",
+      "label": "Game Result",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:iron_county_prohibition_conflict",
+      "label": "conflict",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:montana-ratifies-law",
+      "label": "Montana ratifies federal prohibition amendment",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:nebraska_ratification",
+      "label": "Nebraska Ratifies Prohibition Amendment",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:new-zealand-prohibition-vote",
+      "label": "Prohibition Vote in New Zealand",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:paris_conference_resumes",
+      "label": "Council of Four and Council of Foreign Ministers Resume Sessions",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:passage_of_district_prohibition_bill",
+      "label": "Passage of District Prohibition Bill",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "claim:sheppard_opinion",
+          "rel": "ENABLES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "event:president-end-war-prohibition",
+      "label": "President ends war prohibition",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:president_work",
+      "label": "President Wilson's Work",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition-amendment",
+      "label": "Prohibition Amendment Ratification",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition-bill-amendments",
+      "label": "Prohibition Bill Amendments",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition-bill-discussion",
+      "label": "Discussion of District Prohibition Bill",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition-discussion",
+      "label": "Prohibition Discussion at Democratic Convention",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition-enforcement-act",
+      "label": "Prohibition Enforcement Act",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:supreme-court-decision",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "event:prohibition-resolution-vote",
+      "label": "Voting on Prohibition Resolution",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition-strategy-chamber",
+      "label": "Prohibition Strategy Chamber",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition-victory",
+      "label": "Prohibition Victory",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition-vote",
+      "label": "Prohibition Vote",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition_agents_arrested",
+      "label": "Prohibition Agents Arrested",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "claim:agents_held_up_by_witnesses",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        },
+        {
+          "id": "claim:agents_shoot_law_violators",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        },
+        {
+          "id": "claim:agents_stopped_by_searchlight",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "event:prohibition_and_employment",
+      "label": "Prohibition and Employment Resolutions Presented",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:paris_conference_resumes",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "event:prohibition_bill",
+      "label": "Prohibition Bill",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition_bill_considered",
+      "label": "Prohibition Bill Considered",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition_convention",
+      "label": "Prohibition Convention",
+      "type": "Event",
+      "base_rate": 0.0016,
+      "parents": [
+        {
+          "id": "event:president_work",
+          "rel": "MEDIATES",
+          "edge_probability": 0.001
+        },
+        {
+          "id": "event:ratification_of_treaty",
+          "rel": "MEDIATES",
+          "edge_probability": 0.001
+        },
+        {
+          "id": "event:subnormal_survey",
+          "rel": "MEDIATES",
+          "edge_probability": 0.001
+        },
+        {
+          "id": "event:war_operations",
+          "rel": "MEDIATES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "event:prohibition_debate",
+      "label": "Debate on Prohibition",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition_defense",
+      "label": "Prohibition Defense",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition_of_spirits",
+      "label": "Prohibition of Spirits",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:prohibition_order",
+      "label": "Prohibition Order",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:game_result",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "event:ratification_of_treaty",
+      "label": "Ratification of treaty",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:senate-passes-prohibition-bill",
+      "label": "Senate passes prohibition bill",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:subnormal_survey",
+      "label": "Survey of Subnormal Minds in Cook County",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:supreme-court-decision",
+      "label": "Supreme Court Decision",
+      "type": "event",
+      "base_rate": 0.0016,
+      "parents": []
+    },
+    {
+      "id": "event:vodka-prohibition",
+      "label": "Vodka Prohibition",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:war-time-prohibition-enforcement-act",
+      "label": "War-Time Prohibition Enforcement Act",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:war-time-prohibition-order",
+      "label": "War-Time Prohibition Order",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:war-time-prohibition-repeal",
+      "label": "War-time prohibition repeal",
+      "type": "Event",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "event:war_operations",
+      "label": "War Operations in Caucasus and Persia",
+      "type": "Event",
+      "base_rate": 0.0016,
+      "parents": []
+    },
+    {
+      "id": "event:war_prohibition_discussion",
+      "label": "Discussion on war-time prohibition with American officials",
+      "type": "event",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:british_war_commission_departure",
+          "rel": "MEDIATES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "topic:district-prohibition-bill",
+      "label": "District prohibition bill",
+      "type": "topic",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:senate-passes-prohibition-bill",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "topic:federal-prohibition-enforcement-act",
+      "label": "Federal Prohibition Enforcement Act",
+      "type": "Topic",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "topic:prohibition",
+      "label": "Prohibition",
+      "type": "topic",
+      "base_rate": 0.01,
+      "parents": [
+        {
+          "id": "event:prohibition-strategy-chamber",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    },
+    {
+      "id": "topic:prohibition-bill",
+      "label": "District Prohibition Bill",
+      "type": "Topic",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "topic:prohibition-enforcement",
+      "label": "Prohibition Enforcement",
+      "type": "topic",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "topic:prohibition_amendment",
+      "label": "Prohibition Amendment",
+      "type": "Topic",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "topic:prohibition_conflict",
+      "label": "prohibition conflict",
+      "type": "topic",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "topic:prohibition_referendum",
+      "label": "Prohibition referendum",
+      "type": "topic",
+      "base_rate": 0.001,
+      "parents": []
+    },
+    {
+      "id": "topic:war-prohibition",
+      "label": "War prohibition",
+      "type": "Topic",
+      "base_rate": 0.001,
+      "parents": [
+        {
+          "id": "event:president-end-war-prohibition",
+          "rel": "CAUSES",
+          "edge_probability": 0.001
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "claim:agents_held_up_by_witnesses",
+      "to": "event:prohibition_agents_arrested",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "claim:agents_shoot_law_violators",
+      "to": "event:prohibition_agents_arrested",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "claim:agents_stopped_by_searchlight",
+      "to": "event:prohibition_agents_arrested",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "claim:prohibition-bill-discussion",
+      "to": "claim:prohibition-success",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "claim:sheppard_opinion",
+      "to": "event:passage_of_district_prohibition_bill",
+      "rel": "ENABLES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:british_war_commission_departure",
+      "to": "event:war_prohibition_discussion",
+      "rel": "MEDIATES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:conferees_agree_on_draft_bill",
+      "to": "claim:prohibition_amendments_retained",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:game_result",
+      "to": "event:prohibition_order",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:nebraska_ratification",
+      "to": "claim:prohibition_amendment_ratified",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:paris_conference_resumes",
+      "to": "event:prohibition_and_employment",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:president-end-war-prohibition",
+      "to": "topic:war-prohibition",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:president_work",
+      "to": "event:prohibition_convention",
+      "rel": "MEDIATES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:prohibition-resolution-vote",
+      "to": "claim:prohibition-resolution-passed",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:prohibition-strategy-chamber",
+      "to": "topic:prohibition",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:prohibition_bill_considered",
+      "to": "claim:prohibition_bill_considered",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:prohibition_of_spirits",
+      "to": "claim:prohibition_of_spirits",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:ratification_of_treaty",
+      "to": "event:prohibition_convention",
+      "rel": "MEDIATES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:senate-passes-prohibition-bill",
+      "to": "topic:district-prohibition-bill",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:subnormal_survey",
+      "to": "event:prohibition_convention",
+      "rel": "MEDIATES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:supreme-court-decision",
+      "to": "event:prohibition-enforcement-act",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:war-time-prohibition-repeal",
+      "to": "claim:war-time-prohibition-repeal",
+      "rel": "CAUSES",
+      "edge_probability": 0.001
+    },
+    {
+      "from": "event:war_operations",
+      "to": "event:prohibition_convention",
+      "rel": "MEDIATES",
+      "edge_probability": 0.001
+    }
+  ]
+}

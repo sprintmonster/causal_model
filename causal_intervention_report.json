@@ -1,0 +1,19 @@
+{
+  "target": "event:prohibition-enforcement-act",
+  "intervention": {
+    "do": "event:supreme-court-decision",
+    "value": 1.0
+  },
+  "baseline": {
+    "P(target)": 0.001002,
+    "P(intervene_node)": 0.0016
+  },
+  "post_intervention": {
+    "P(target)": 0.001999,
+    "P(intervene_node)": 1.0
+  },
+  "effect": {
+    "absolute_delta": 0.000997,
+    "relative_delta": 0.99581
+  }
+}
