@@ -1,3 +1,6 @@
+<img width="3943" height="2620" alt="prohibition_cluster_dag_typed" src="https://github.com/user-attachments/assets/978771ee-0907-4b1a-9d2b-f7a94436f674" />
+
+
 # 금주법(Prohibition) 정책 클러스터 분석
 
 ## 개요
